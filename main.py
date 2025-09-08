@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import TextVectorization, Dense, Embedding, GlobalAveragePooling1D
-from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.models import Sequential # type: ignore
+from tensorflow.keras.layers import TextVectorization, Dense, Embedding, GlobalAveragePooling1D # type: ignore
+from tensorflow.keras.optimizers import Adam # type: ignore
 
 # Step 1: Load the CSV file with statements and associated illnesses
 def load_csv(file_path="new.csv"):
